@@ -15,10 +15,10 @@ const store = createStore({
     },
   },
   mutations: {
-    getCat(state, catUrl) {
+    getCat(state, catUrl: string) {
       state.url = catUrl;
     },
-    error(state, error) {
+    error(state, error: string) {
       state.err = error;
     },
   },
