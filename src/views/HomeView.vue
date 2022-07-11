@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import 
+// import
 import GetCat from "@/components/GetCat.vue";
 </script>
 
