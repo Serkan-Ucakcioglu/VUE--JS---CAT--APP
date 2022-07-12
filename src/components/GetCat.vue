@@ -1,11 +1,8 @@
 <script lang="ts" setup>
 /* import */
 import { computed, onMounted } from "@vue/runtime-core";
-<<<<<<< HEAD
 import { useStore } from "../store";
-=======
-import { useStore } from "./store";
->>>>>>> 81f53ee4509530f764637c433048fbc15cdd7d00
+
 /* */
 
 const store = useStore(); //vuex store
