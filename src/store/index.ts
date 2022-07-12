@@ -1,7 +1,15 @@
-import { createStore } from "vuex";
-import axios from "axios";
+import { InjectionKey } from 'vue'
+import { createStore, useStore as baseUseStore, Store } from 'vuex'
+import axios from "axios"
 
-const store = createStore({
+export interface State {
+  url : string,
+  err: string
+}
+
+export const key: InjectionKey<Store<State>> = Symbol()
+
+export const store = createStore<State>({
   state: {
     url: "",
     err: "",
@@ -24,8 +32,7 @@ const store = createStore({
   },
   actions: {
     getCat({ commit }) {
-      axios
-        .get("https://api.thecatapi.com/v1/images/search")
+      axios.get("https://api.thecatapi.com/v1/images/search")
         .then((res) => {
           commit("getCat", res.data[0].url);
         })
@@ -34,5 +41,9 @@ const store = createStore({
         });
     },
   },
-});
-export default store;
+})
+
+// define your own `useStore` composition function
+export function useStore () {
+  return baseUseStore(key)
+}

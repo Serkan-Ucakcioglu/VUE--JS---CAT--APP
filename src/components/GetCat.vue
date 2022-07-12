@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 /* import */
 import { computed, onMounted } from "@vue/runtime-core";
-import { useStore } from "vuex";
+import { useStore } from "../store";
 /* */
 
 const store = useStore(); //vuex store
