@@ -60,8 +60,8 @@ onMounted(() => {
   }
 
   .cat_img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
   }
 }
 </style>
