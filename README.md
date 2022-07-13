@@ -1,25 +1,2 @@
-# project
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# VUE--JS---CAT--APP
+### Cat 
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/98692987/178717944-7b8fc894-6c46-46de-8f53-4f5d7271847d.png">
